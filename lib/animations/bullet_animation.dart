@@ -163,7 +163,7 @@ class BulletAnimation extends CustomPainter {
         radius: 0.7,
         colors: [
           Color.fromARGB(255, 255, 255, 255),
-          Color.fromRGBO(255, 255, 200, 1),
+          Color.fromRGBO(255, 255, 120, 1),
           Color.fromRGBO(245, 245, 106, 1),
           Color.fromRGBO(247, 247, 80, 1),
           Color.fromRGBO(247, 247, 68, 1),
@@ -182,8 +182,8 @@ class BulletAnimation extends CustomPainter {
 // ovalDecreases
     canvas.drawOval(
       Rect.fromCenter(
-        center: Offset(centerX + (1 - ovalDecreases.value) * (centerX + 30),
-            centerY + (20 * ovalDecreases.value)),
+        center: Offset(centerX + (1 - ovalDecreases.value) * (centerX + 50),
+            centerY + (12 * ovalDecreases.value)),
         width: size.width / 3 * ovalDecreases.value,
         height: size.height / 3,
       ),
@@ -192,8 +192,8 @@ class BulletAnimation extends CustomPainter {
 
     canvas.drawOval(
       Rect.fromCenter(
-        center: Offset(centerX + (1 - ovalDecreases.value) * (centerX + 30),
-            (centerY - 17) + (20 * ovalDecreases.value)),
+        center: Offset(centerX + (1 - ovalDecreases.value) * (centerX + 50),
+            (centerY - 17) + (12 * ovalDecreases.value)),
         width: size.width / 10 * ovalDecreases.value,
         height: size.height / 10,
       ),
@@ -202,8 +202,8 @@ class BulletAnimation extends CustomPainter {
 
     canvas.drawOval(
       Rect.fromCenter(
-        center: Offset(centerX + (1 - ovalDecreases.value) * (centerX + 30),
-            (centerY + 17) + (20 * ovalDecreases.value)),
+        center: Offset(centerX + (1 - ovalDecreases.value) * (centerX + 50),
+            (centerY + 17) + (12 * ovalDecreases.value)),
         width: size.width / 8 * ovalDecreases.value,
         height: size.height / 8,
       ),
@@ -215,8 +215,8 @@ class BulletAnimation extends CustomPainter {
       canvas.drawOval(
         Rect.fromCenter(
           center: Offset(
-              (-30 + (ovalGrowing.value * (ovalGrowing.value + 30 + centerX))),
-              centerY + 20 * ovalGrowing.value),
+              (-50 + (ovalGrowing.value * (ovalGrowing.value + 50 + centerX))),
+              centerY + 12 * ovalGrowing.value),
           width: (size.width / 3) * ovalGrowing.value,
           height: size.height / 3,
         ),
@@ -226,8 +226,8 @@ class BulletAnimation extends CustomPainter {
       canvas.drawOval(
         Rect.fromCenter(
           center: Offset(
-              (-30 + (ovalGrowing.value * (ovalGrowing.value + 30 + centerX))),
-              (centerY - 17) + 20 * ovalGrowing.value),
+              (-50 + (ovalGrowing.value * (ovalGrowing.value + 50 + centerX))),
+              (centerY - 17) + 12 * ovalGrowing.value),
           width: (size.width / 10) * ovalGrowing.value,
           height: size.height / 10,
         ),
@@ -237,8 +237,8 @@ class BulletAnimation extends CustomPainter {
       canvas.drawOval(
         Rect.fromCenter(
           center: Offset(
-              (-30 + (ovalGrowing.value * (ovalGrowing.value + 30 + centerX))),
-              (centerY + 17) + 20 * ovalGrowing.value),
+              (-50 + (ovalGrowing.value * (ovalGrowing.value + 50 + centerX))),
+              (centerY + 17) + 12 * ovalGrowing.value),
           width: (size.width / 8) * ovalGrowing.value,
           height: size.height / 8,
         ),
@@ -306,8 +306,8 @@ class BulletAnimation extends CustomPainter {
     } else {
       canvas.drawOval(
         Rect.fromCenter(
-          center: Offset(centerX + (1 - ovalDecreases2.value) * (centerX + 30),
-              centerY + (20 * ovalDecreases2.value)),
+          center: Offset(centerX + (1 - ovalDecreases2.value) * (centerX + 50),
+              centerY + (12 * ovalDecreases2.value)),
           width: size.width / 3 * ovalDecreases2.value,
           height: size.height / 3,
         ),
@@ -316,8 +316,8 @@ class BulletAnimation extends CustomPainter {
 
       canvas.drawOval(
         Rect.fromCenter(
-          center: Offset(centerX + (1 - ovalDecreases2.value) * (centerX + 30),
-              (centerY - 17) + (20 * ovalDecreases2.value)),
+          center: Offset(centerX + (1 - ovalDecreases2.value) * (centerX + 50),
+              (centerY - 17) + (12 * ovalDecreases2.value)),
           width: size.width / 10 * ovalDecreases2.value,
           height: size.height / 10,
         ),
@@ -326,8 +326,8 @@ class BulletAnimation extends CustomPainter {
 
       canvas.drawOval(
         Rect.fromCenter(
-          center: Offset(centerX + (1 - ovalDecreases2.value) * (centerX + 30),
-              (centerY + 17) + (20 * ovalDecreases2.value)),
+          center: Offset(centerX + (1 - ovalDecreases2.value) * (centerX + 50),
+              (centerY + 17) + (12 * ovalDecreases2.value)),
           width: size.width / 8 * ovalDecreases2.value,
           height: size.height / 8,
         ),
@@ -340,9 +340,9 @@ class BulletAnimation extends CustomPainter {
       canvas.drawOval(
         Rect.fromCenter(
           center: Offset(
-              (-30 +
-                  (ovalGrowing2.value * (ovalGrowing2.value + 30 + centerX))),
-              centerY + 20 * ovalGrowing2.value),
+              (-50 +
+                  (ovalGrowing2.value * (ovalGrowing2.value + 50 + centerX))),
+              centerY + 12 * ovalGrowing2.value),
           width: (size.width / 3) * ovalGrowing2.value,
           height: size.height / 3,
         ),
@@ -352,9 +352,9 @@ class BulletAnimation extends CustomPainter {
       canvas.drawOval(
         Rect.fromCenter(
           center: Offset(
-              (-30 +
-                  (ovalGrowing2.value * (ovalGrowing2.value + 30 + centerX))),
-              (centerY - 17) + 20 * ovalGrowing2.value),
+              (-50 +
+                  (ovalGrowing2.value * (ovalGrowing2.value + 50 + centerX))),
+              (centerY - 17) + 12 * ovalGrowing2.value),
           width: (size.width / 10) * ovalGrowing2.value,
           height: size.height / 10,
         ),
@@ -364,9 +364,9 @@ class BulletAnimation extends CustomPainter {
       canvas.drawOval(
         Rect.fromCenter(
           center: Offset(
-              (-30 +
-                  (ovalGrowing2.value * (ovalGrowing2.value + 30 + centerX))),
-              (centerY + 17) + 20 * ovalGrowing2.value),
+              (-50 +
+                  (ovalGrowing2.value * (ovalGrowing2.value + 50 + centerX))),
+              (centerY + 17) + 12 * ovalGrowing2.value),
           width: (size.width / 8) * ovalGrowing2.value,
           height: size.height / 8,
         ),
@@ -432,8 +432,8 @@ class BulletAnimation extends CustomPainter {
     } else {
       canvas.drawOval(
         Rect.fromCenter(
-          center: Offset(centerX + (1 - ovalDecreases3.value) * (centerX + 30),
-              centerY + (20 * ovalDecreases3.value)),
+          center: Offset(centerX + (1 - ovalDecreases3.value) * (centerX + 50),
+              centerY + (12 * ovalDecreases3.value)),
           width: size.width / 3 * ovalDecreases3.value,
           height: size.height / 3,
         ),
@@ -442,8 +442,8 @@ class BulletAnimation extends CustomPainter {
 
       canvas.drawOval(
         Rect.fromCenter(
-          center: Offset(centerX + (1 - ovalDecreases3.value) * (centerX + 30),
-              (centerY - 17) + (20 * ovalDecreases3.value)),
+          center: Offset(centerX + (1 - ovalDecreases3.value) * (centerX + 50),
+              (centerY - 17) + (12 * ovalDecreases3.value)),
           width: size.width / 10 * ovalDecreases3.value,
           height: size.height / 10,
         ),
@@ -452,8 +452,8 @@ class BulletAnimation extends CustomPainter {
 
       canvas.drawOval(
         Rect.fromCenter(
-          center: Offset(centerX + (1 - ovalDecreases3.value) * (centerX + 30),
-              (centerY + 17) + (20 * ovalDecreases3.value)),
+          center: Offset(centerX + (1 - ovalDecreases3.value) * (centerX + 50),
+              (centerY + 17) + (12 * ovalDecreases3.value)),
           width: size.width / 8 * ovalDecreases3.value,
           height: size.height / 8,
         ),
@@ -466,9 +466,9 @@ class BulletAnimation extends CustomPainter {
       canvas.drawOval(
         Rect.fromCenter(
           center: Offset(
-              (-30 +
-                  (ovalGrowing3.value * (ovalGrowing3.value + 30 + centerX))),
-              centerY + 20 * ovalGrowing3.value),
+              (-50 +
+                  (ovalGrowing3.value * (ovalGrowing3.value + 50 + centerX))),
+              centerY + 12 * ovalGrowing3.value),
           width: (size.width / 3) * ovalGrowing3.value,
           height: size.height / 3,
         ),
@@ -478,9 +478,9 @@ class BulletAnimation extends CustomPainter {
       canvas.drawOval(
         Rect.fromCenter(
           center: Offset(
-              (-30 +
-                  (ovalGrowing3.value * (ovalGrowing3.value + 30 + centerX))),
-              (centerY - 17) + 20 * ovalGrowing3.value),
+              (-50 +
+                  (ovalGrowing3.value * (ovalGrowing3.value + 50 + centerX))),
+              (centerY - 17) + 12 * ovalGrowing3.value),
           width: (size.width / 10) * ovalGrowing3.value,
           height: size.height / 10,
         ),
@@ -490,9 +490,9 @@ class BulletAnimation extends CustomPainter {
       canvas.drawOval(
         Rect.fromCenter(
           center: Offset(
-              (-30 +
-                  (ovalGrowing3.value * (ovalGrowing3.value + 30 + centerX))),
-              (centerY + 17) + 20 * ovalGrowing3.value),
+              (-50 +
+                  (ovalGrowing3.value * (ovalGrowing3.value + 50 + centerX))),
+              (centerY + 17) + 12 * ovalGrowing3.value),
           width: (size.width / 8) * ovalGrowing3.value,
           height: size.height / 8,
         ),
@@ -558,8 +558,8 @@ class BulletAnimation extends CustomPainter {
     } else {
       canvas.drawOval(
         Rect.fromCenter(
-          center: Offset(centerX + (1 - ovalDecreases4.value) * (centerX + 30),
-              centerY + (20 * ovalDecreases4.value)),
+          center: Offset(centerX + (1 - ovalDecreases4.value) * (centerX + 50),
+              centerY + (12 * ovalDecreases4.value)),
           width: size.width / 3 * ovalDecreases4.value,
           height: size.height / 3,
         ),
@@ -568,8 +568,8 @@ class BulletAnimation extends CustomPainter {
 
       canvas.drawOval(
         Rect.fromCenter(
-          center: Offset(centerX + (1 - ovalDecreases4.value) * (centerX + 30),
-              (centerY - 17) + (20 * ovalDecreases4.value)),
+          center: Offset(centerX + (1 - ovalDecreases4.value) * (centerX + 50),
+              (centerY - 17) + (12 * ovalDecreases4.value)),
           width: size.width / 10 * ovalDecreases4.value,
           height: size.height / 10,
         ),
@@ -578,8 +578,8 @@ class BulletAnimation extends CustomPainter {
 
       canvas.drawOval(
         Rect.fromCenter(
-          center: Offset(centerX + (1 - ovalDecreases4.value) * (centerX + 30),
-              (centerY + 17) + (20 * ovalDecreases4.value)),
+          center: Offset(centerX + (1 - ovalDecreases4.value) * (centerX + 50),
+              (centerY + 17) + (12 * ovalDecreases4.value)),
           width: size.width / 8 * ovalDecreases4.value,
           height: size.height / 8,
         ),
@@ -592,9 +592,9 @@ class BulletAnimation extends CustomPainter {
       canvas.drawOval(
         Rect.fromCenter(
           center: Offset(
-              (-30 +
-                  (ovalGrowing4.value * (ovalGrowing4.value + 30 + centerX))),
-              centerY + 20 * ovalGrowing4.value),
+              (-50 +
+                  (ovalGrowing4.value * (ovalGrowing4.value + 50 + centerX))),
+              centerY + 12 * ovalGrowing4.value),
           width: (size.width / 3) * ovalGrowing4.value,
           height: size.height / 3,
         ),
@@ -604,9 +604,9 @@ class BulletAnimation extends CustomPainter {
       canvas.drawOval(
         Rect.fromCenter(
           center: Offset(
-              (-30 +
-                  (ovalGrowing4.value * (ovalGrowing4.value + 30 + centerX))),
-              (centerY - 17) + 20 * ovalGrowing4.value),
+              (-50 +
+                  (ovalGrowing4.value * (ovalGrowing4.value + 50 + centerX))),
+              (centerY - 17) + 12 * ovalGrowing4.value),
           width: (size.width / 10) * ovalGrowing4.value,
           height: size.height / 10,
         ),
@@ -616,9 +616,9 @@ class BulletAnimation extends CustomPainter {
       canvas.drawOval(
         Rect.fromCenter(
           center: Offset(
-              (-30 +
-                  (ovalGrowing4.value * (ovalGrowing4.value + 30 + centerX))),
-              (centerY + 17) + 20 * ovalGrowing4.value),
+              (-50 +
+                  (ovalGrowing4.value * (ovalGrowing4.value + 50 + centerX))),
+              (centerY + 17) + 12 * ovalGrowing4.value),
           width: (size.width / 8) * ovalGrowing4.value,
           height: size.height / 8,
         ),
@@ -684,8 +684,8 @@ class BulletAnimation extends CustomPainter {
     } else {
       canvas.drawOval(
         Rect.fromCenter(
-          center: Offset(centerX + (1 - ovalDecreases5.value) * (centerX + 30),
-              centerY + (20 * ovalDecreases5.value)),
+          center: Offset(centerX + (1 - ovalDecreases5.value) * (centerX + 50),
+              centerY + (12 * ovalDecreases5.value)),
           width: size.width / 3 * ovalDecreases5.value,
           height: size.height / 3,
         ),
@@ -694,8 +694,8 @@ class BulletAnimation extends CustomPainter {
 
       canvas.drawOval(
         Rect.fromCenter(
-          center: Offset(centerX + (1 - ovalDecreases5.value) * (centerX + 30),
-              (centerY - 17) + (20 * ovalDecreases5.value)),
+          center: Offset(centerX + (1 - ovalDecreases5.value) * (centerX + 50),
+              (centerY - 17) + (12 * ovalDecreases5.value)),
           width: size.width / 10 * ovalDecreases5.value,
           height: size.height / 10,
         ),
@@ -704,8 +704,8 @@ class BulletAnimation extends CustomPainter {
 
       canvas.drawOval(
         Rect.fromCenter(
-          center: Offset(centerX + (1 - ovalDecreases5.value) * (centerX + 30),
-              (centerY + 17) + (20 * ovalDecreases5.value)),
+          center: Offset(centerX + (1 - ovalDecreases5.value) * (centerX + 50),
+              (centerY + 17) + (12 * ovalDecreases5.value)),
           width: size.width / 8 * ovalDecreases5.value,
           height: size.height / 8,
         ),
@@ -718,9 +718,9 @@ class BulletAnimation extends CustomPainter {
       canvas.drawOval(
         Rect.fromCenter(
           center: Offset(
-              (-30 +
-                  (ovalGrowing5.value * (ovalGrowing5.value + 30 + centerX))),
-              centerY + 20 * ovalGrowing5.value),
+              (-50 +
+                  (ovalGrowing5.value * (ovalGrowing5.value + 50 + centerX))),
+              centerY + 12 * ovalGrowing5.value),
           width: (size.width / 3) * ovalGrowing5.value,
           height: size.height / 3,
         ),
@@ -730,9 +730,9 @@ class BulletAnimation extends CustomPainter {
       canvas.drawOval(
         Rect.fromCenter(
           center: Offset(
-              (-30 +
-                  (ovalGrowing5.value * (ovalGrowing5.value + 30 + centerX))),
-              (centerY - 17) + 20 * ovalGrowing5.value),
+              (-50 +
+                  (ovalGrowing5.value * (ovalGrowing5.value + 50 + centerX))),
+              (centerY - 17) + 12 * ovalGrowing5.value),
           width: (size.width / 10) * ovalGrowing5.value,
           height: size.height / 10,
         ),
@@ -742,9 +742,9 @@ class BulletAnimation extends CustomPainter {
       canvas.drawOval(
         Rect.fromCenter(
           center: Offset(
-              (-30 +
-                  (ovalGrowing5.value * (ovalGrowing5.value + 30 + centerX))),
-              (centerY + 17) + 20 * ovalGrowing5.value),
+              (-50 +
+                  (ovalGrowing5.value * (ovalGrowing5.value + 50 + centerX))),
+              (centerY + 17) + 12 * ovalGrowing5.value),
           width: (size.width / 8) * ovalGrowing5.value,
           height: size.height / 8,
         ),
@@ -810,8 +810,8 @@ class BulletAnimation extends CustomPainter {
     } else {
       canvas.drawOval(
         Rect.fromCenter(
-          center: Offset(centerX + (1 - ovalDecreases6.value) * (centerX + 30),
-              centerY + (20 * ovalDecreases6.value)),
+          center: Offset(centerX + (1 - ovalDecreases6.value) * (centerX + 50),
+              centerY + (12 * ovalDecreases6.value)),
           width: size.width / 3 * ovalDecreases6.value,
           height: size.height / 3,
         ),
@@ -820,8 +820,8 @@ class BulletAnimation extends CustomPainter {
 
       canvas.drawOval(
         Rect.fromCenter(
-          center: Offset(centerX + (1 - ovalDecreases6.value) * (centerX + 30),
-              (centerY - 17) + (20 * ovalDecreases6.value)),
+          center: Offset(centerX + (1 - ovalDecreases6.value) * (centerX + 50),
+              (centerY - 17) + (12 * ovalDecreases6.value)),
           width: size.width / 10 * ovalDecreases6.value,
           height: size.height / 10,
         ),
@@ -830,8 +830,8 @@ class BulletAnimation extends CustomPainter {
 
       canvas.drawOval(
         Rect.fromCenter(
-          center: Offset(centerX + (1 - ovalDecreases6.value) * (centerX + 30),
-              (centerY + 17) + (20 * ovalDecreases6.value)),
+          center: Offset(centerX + (1 - ovalDecreases6.value) * (centerX + 50),
+              (centerY + 17) + (12 * ovalDecreases6.value)),
           width: size.width / 8 * ovalDecreases6.value,
           height: size.height / 8,
         ),
@@ -843,8 +843,8 @@ class BulletAnimation extends CustomPainter {
     canvas.drawOval(
       Rect.fromCenter(
         center: Offset(
-            (-30 + (ovalGrowing6.value * (ovalGrowing6.value + 30 + centerX))),
-            centerY + 20 * ovalGrowing6.value),
+            (-50 + (ovalGrowing6.value * (ovalGrowing6.value + 50 + centerX))),
+            centerY + 12 * ovalGrowing6.value),
         width: (size.width / 3) * ovalGrowing6.value,
         height: size.height / 3,
       ),
@@ -854,8 +854,8 @@ class BulletAnimation extends CustomPainter {
     canvas.drawOval(
       Rect.fromCenter(
         center: Offset(
-            (-30 + (ovalGrowing6.value * (ovalGrowing6.value + 30 + centerX))),
-            (centerY - 17) + 20 * ovalGrowing6.value),
+            (-50 + (ovalGrowing6.value * (ovalGrowing6.value + 50 + centerX))),
+            (centerY - 17) + 12 * ovalGrowing6.value),
         width: (size.width / 10) * ovalGrowing6.value,
         height: size.height / 10,
       ),
@@ -865,8 +865,8 @@ class BulletAnimation extends CustomPainter {
     canvas.drawOval(
       Rect.fromCenter(
         center: Offset(
-            (-30 + (ovalGrowing6.value * (ovalGrowing6.value + 30 + centerX))),
-            (centerY + 17) + 20 * ovalGrowing6.value),
+            (-50 + (ovalGrowing6.value * (ovalGrowing6.value + 50 + centerX))),
+            (centerY + 17) + 12 * ovalGrowing6.value),
         width: (size.width / 8) * ovalGrowing6.value,
         height: size.height / 8,
       ),

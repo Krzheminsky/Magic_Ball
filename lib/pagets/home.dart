@@ -15,6 +15,13 @@ class Home extends StatefulWidget {
 class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   late final AnimationController _controller;
 
+  void _restartAnimation() {
+    _controller.value = 0.0;
+    setState(() {
+      _controller.forward();
+    });
+  }
+
   @override
   void initState() {
     super.initState();
@@ -39,7 +46,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
             Container(
                 margin: const EdgeInsets.fromLTRB(30, 30, 30, 40),
                 child: Text(
-                  "Привіт! Я Магічна Куля. \nЯкщо тобі важко самостійно прийняти рішення, тицяй мене. \nАле запам'ятай - у тебе тільки одна спроба!",
+                  "Привіт! Я Магічна Куля. \nЯкщо тобі важко самостійно прийняти рішення, тицяй мене.",
                   textAlign: TextAlign.center,
                   // style: TextStyle(fontFamily: ),
                   style: GoogleFonts.caveat(
@@ -47,37 +54,56 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                       fontSize: 20,
                       fontWeight: FontWeight.w600),
                 )),
-            ClipRRect(
-              borderRadius: BorderRadius.circular(150),
-              child: GestureDetector(
-                onTap: () {
-                  setState(() {
-                    _controller.forward();
-                  });
-                },
-                child: Container(
-                  width: 300.0,
-                  height: 300.0,
-                  decoration: const BoxDecoration(
-                    shape: BoxShape.circle,
-                    gradient: RadialGradient(
-                      center: Alignment(0.5, -0.5),
-                      radius: 0.9,
-                      colors: [
-                        Color.fromARGB(255, 254, 253, 255),
-                        Color.fromARGB(255, 31, 233, 5),
-                        Color.fromARGB(255, 31, 196, 9),
-                        Color.fromARGB(255, 28, 177, 8),
-                        Color.fromARGB(255, 25, 158, 8),
-                        Color.fromARGB(255, 22, 131, 7),
-                        Color.fromARGB(255, 18, 114, 6),
-                        Color.fromARGB(255, 13, 80, 4),
-                        Color.fromARGB(255, 10, 63, 3),
-                        Color.fromARGB(255, 7, 56, 1),
-                      ],
-                    ),
+            Container(
+              width: 300.0,
+              height: 300.0,
+              decoration: BoxDecoration(
+                shape: BoxShape.circle,
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.white.withOpacity(0.5),
+                    blurRadius: 10,
+                    spreadRadius: 1,
+                    offset: const Offset(-1, 0), // Shadow position
                   ),
-                  child: Transition(controller: _controller),
+                ],
+              ),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(150),
+                child: GestureDetector(
+                  onTap: () {
+                    if (_controller.status == AnimationStatus.completed) {
+                      _restartAnimation();
+                    } else {
+                      setState(() {
+                        _controller.forward();
+                      });
+                    }
+                  },
+                  child: Container(
+                    width: 300.0,
+                    height: 300.0,
+                    decoration: const BoxDecoration(
+                      shape: BoxShape.circle,
+                      gradient: RadialGradient(
+                        center: Alignment(0.5, -0.5),
+                        radius: 0.9,
+                        colors: [
+                          Color.fromARGB(255, 254, 253, 255),
+                          Color.fromARGB(255, 31, 233, 5),
+                          Color.fromARGB(255, 31, 196, 9),
+                          Color.fromARGB(255, 28, 177, 8),
+                          Color.fromARGB(255, 25, 158, 8),
+                          Color.fromARGB(255, 22, 131, 7),
+                          Color.fromARGB(255, 18, 114, 6),
+                          Color.fromARGB(255, 13, 80, 4),
+                          Color.fromARGB(255, 10, 63, 3),
+                          Color.fromARGB(255, 7, 56, 1),
+                        ],
+                      ),
+                    ),
+                    child: Transition(controller: _controller),
+                  ),
                 ),
               ),
             ),

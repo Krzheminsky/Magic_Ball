@@ -23,8 +23,8 @@ class Transition extends StatelessWidget {
               size: const Size(300, 300),
             ),
             Positioned(
-              left: 100,
-              top: 120,
+              left: 101,
+              top: 112,
               child: TextAnimation(
                 controller: controller,
               ),
