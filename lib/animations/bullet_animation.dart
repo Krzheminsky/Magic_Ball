@@ -33,7 +33,7 @@ class BulletAnimation extends CustomPainter {
       CurvedAnimation(
         parent: controller,
         curve: const Interval(
-          0.03,
+          0.015,
           0.1,
           curve: Curves.linear,
         ),
@@ -56,7 +56,7 @@ class BulletAnimation extends CustomPainter {
       CurvedAnimation(
         parent: controller,
         curve: const Interval(
-          0.13,
+          0.115,
           0.2,
           curve: Curves.linear,
         ),
@@ -78,7 +78,7 @@ class BulletAnimation extends CustomPainter {
       CurvedAnimation(
         parent: controller,
         curve: const Interval(
-          0.23,
+          0.215,
           0.3,
           curve: Curves.linear,
         ),
@@ -100,7 +100,7 @@ class BulletAnimation extends CustomPainter {
       CurvedAnimation(
         parent: controller,
         curve: const Interval(
-          0.33,
+          0.315,
           0.4,
           curve: Curves.linear,
         ),
@@ -122,7 +122,7 @@ class BulletAnimation extends CustomPainter {
       CurvedAnimation(
         parent: controller,
         curve: const Interval(
-          0.46,
+          0.43,
           0.6,
           curve: Curves.linear,
         ),
@@ -144,7 +144,7 @@ class BulletAnimation extends CustomPainter {
       CurvedAnimation(
         parent: controller,
         curve: const Interval(
-          0.69,
+          0.645,
           0.9,
           curve: Curves.linear,
         ),

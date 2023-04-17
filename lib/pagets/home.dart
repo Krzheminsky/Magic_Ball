@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:bullet_animation/components/transition.dart';
 
-const duration = Duration(milliseconds: 10000);
+const duration = Duration(milliseconds: 12000);
 
 class Home extends StatefulWidget {
   const Home({super.key, required this.title});
